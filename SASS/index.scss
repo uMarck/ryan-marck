@@ -274,3 +274,143 @@ footer {
         }
     }
 }
+
+.asn-mb {
+    display: none;
+}
+
+@media  screen and (max-width:460px){
+    #menu {
+        display: none;
+    }
+
+    .eu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        #pri {
+            text-align: center;
+        }
+
+        img {
+            width: 355px;
+        }
+    }
+
+    .projetos {
+        #cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
+    .habilidades {
+        margin-top: 1095px;
+    }
+
+    #contato {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:414px) {
+    #menu {
+        display: none;
+    }
+
+    .menu-bg {
+        display: none;
+    }
+
+    .eu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        background-image: none;
+
+        #pri {
+            padding-top: 55px;
+            text-align: center;
+        }
+
+        img {
+            width: 385px;
+        }
+    }
+
+    .projetos {
+        padding: 0;
+        margin: 0;
+        h1 {
+            font-size: 25px;
+        }
+
+        #projeto {
+            padding:2rem;
+            margin: 1.2rem 1rem 1.5rem 1rem;
+        }
+        #cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .habilidades {
+        margin-top: 905px;
+    }
+
+    #contato {
+        margin-top: -155px;
+        width: 350px;
+        position: absolute;
+        left: 35px;
+
+        form {
+            margin-top: -1px;
+            margin-bottom: 105px;
+        }
+    }
+    footer {
+        font-size: 10px;
+        margin-top: 755px;
+        #redes {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    }
+    #back {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .menu-bg {
+        display: none;
+    }
+
+    .projetos {
+        #projeto {
+        width: 350px;
+    }
+    }
+
+    #contato {
+        width: 350px;
+        position: absolute;
+        left: 25px;
+    }
+}
