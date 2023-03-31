@@ -233,7 +233,6 @@ footer #redes {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
 }
 footer #redes #rd {
   padding: 1rem;
@@ -261,6 +260,31 @@ footer #back a {
   #menu {
     display: none;
   }
+  .menu-bg {
+    display: block;
+  }
+  .menu-bg #bgr {
+    position: relative;
+    left: 360px;
+    filter: invert(2);
+  }
+  .menu-bg ul {
+    list-style: none;
+  }
+  .menu-bg ul li {
+    padding: 1rem;
+    border: 1px solid white;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .menu-bg ul a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
+    padding: 1rem;
+  }
   .eu {
     display: flex;
     flex-direction: column;
@@ -278,6 +302,7 @@ footer #back a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 460px;
   }
   .habilidades {
     margin-top: 1095px;
@@ -295,7 +320,29 @@ footer #back a {
     display: none;
   }
   .menu-bg {
-    display: none;
+    display: block;
+  }
+  .menu-bg #bgr {
+    position: relative;
+    left: 338px;
+    filter: invert(2);
+  }
+  .menu-bg ul {
+    list-style: none;
+  }
+  .menu-bg ul li {
+    padding: 1rem;
+    border: 1px solid white;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .menu-bg ul a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
+    padding: 1rem;
   }
   .eu {
     display: flex;
@@ -303,9 +350,10 @@ footer #back a {
     align-items: center;
     background-color: transparent;
     background-image: none;
+    margin: 0;
+    padding: 0;
   }
   .eu #pri {
-    padding-top: 55px;
     text-align: center;
   }
   .eu img {
@@ -352,13 +400,34 @@ footer #back a {
     flex-wrap: wrap;
     flex-direction: row;
   }
-  #back {
-    display: none;
+  #back a {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 390px) {
   .menu-bg {
-    display: none;
+    display: block;
+  }
+  .menu-bg #bgr {
+    position: relative;
+    left: 325px;
+    filter: invert(2);
+  }
+  .menu-bg ul {
+    list-style: none;
+  }
+  .menu-bg ul li {
+    padding: 1rem;
+    border: 1px solid white;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+  }
+  .menu-bg ul a {
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
+    padding: 1rem;
   }
   .projetos #projeto {
     width: 350px;
@@ -367,5 +436,11 @@ footer #back a {
     width: 350px;
     position: absolute;
     left: 25px;
+  }
+  #back {
+    display: block;
+  }
+  #back a {
+    font-size: 25px;
   }
 }/*# sourceMappingURL=index.css.map */

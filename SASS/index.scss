@@ -253,7 +253,6 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
         #rd {
             padding:1rem;
             transition: 0.5s;
@@ -279,9 +278,35 @@ footer {
     display: none;
 }
 
-@media  screen and (max-width:460px){
+@media  screen and (max-width:460px) {
     #menu {
         display: none;
+    }
+
+    .menu-bg {
+        display: block;
+        #bgr {
+            position:relative;
+            left: 360px;
+            filter: invert(2);
+        }
+        ul {
+            list-style: none;
+            li {
+                padding: 1rem;
+                border: 1px solid white;
+                text-align: center;
+                max-width: 350px;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                font-family: $font;
+                padding: 1rem;
+            }
+        }
     }
 
     .eu {
@@ -305,6 +330,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        max-width: 460px;
     }
     }
 
@@ -327,7 +353,29 @@ footer {
     }
 
     .menu-bg {
-        display: none;
+        display: block;
+        #bgr {
+            position:relative;
+            left: 338px;
+            filter: invert(2);
+        }
+        ul {
+            list-style: none;
+            li {
+                padding: 1rem;
+                border: 1px solid white;
+                text-align: center;
+                max-width: 350px;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                font-family: $font;
+                padding: 1rem;
+            }
+        }
     }
 
     .eu {
@@ -336,9 +384,10 @@ footer {
         align-items: center;
         background-color: transparent;
         background-image: none;
+        margin: 0;
+        padding: 0;
 
         #pri {
-            padding-top: 55px;
             text-align: center;
         }
 
@@ -383,6 +432,7 @@ footer {
             margin-bottom: 105px;
         }
     }
+
     footer {
         font-size: 10px;
         margin-top: 755px;
@@ -392,14 +442,38 @@ footer {
             flex-direction: row;
         }
     }
+
     #back {
-        display: none;
+        a {
+            font-size: 20px;
+        }
     }
 }
 
 @media screen and (max-width: 390px) {
     .menu-bg {
-        display: none;
+        display: block;
+        #bgr {
+            position:relative;
+            left: 325px;
+            filter: invert(2);
+        }
+        ul {
+            list-style: none;
+            li {
+                padding: 1rem;
+                border: 1px solid white;
+                text-align: center;
+                max-width: 350px;
+                margin: auto;
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                font-family: $font;
+                padding: 1rem;
+            }
+        }
     }
 
     .projetos {
@@ -412,5 +486,13 @@ footer {
         width: 350px;
         position: absolute;
         left: 25px;
+    }
+
+    #back {
+        display: block;
+
+        a {
+            font-size: 25px;
+        }
     }
 }
