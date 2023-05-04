@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&family=Oswald:wght@400;600&family=Poppins:wght@200;400;600&family=Roboto:wght@400;900&family=Zeyada&display=swap');
 
 $font: 'Montserrat', 'Roboto', 'Poppins', 'Oswald', 'Zeyada', Verdana, Tahoma;
+::selection {
+    color: grey;
+    background-color: indigo;
+}
 
 * {
     padding: 0;
@@ -83,7 +87,8 @@ header {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        padding-top: 5px;
+        padding-top: 15px;
+        width: auto;
         padding-bottom: 15px;
     }
 
@@ -102,6 +107,11 @@ header {
         border-radius: 55px;
         margin: 2.5rem;
         transition: 0.5s;
+        h3 {
+            font-weight: bold;
+            margin: auto;
+            text-align: center;
+        }
         &:hover {
             transform: scale(1.02);
         }
@@ -278,6 +288,105 @@ footer {
     display: none;
 }
 
+@media screen and (max-width: 1920px) {
+    .projetos {
+        #pjs {
+            padding-bottom: 2rem;
+        }
+        padding-top: 2rem;
+        #projeto {
+            width: 550px;
+            padding-top: 2rem;
+            margin: auto;
+            display: grid;
+            place-items: center;
+            height: 750px;
+
+            .tecs {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+                img {
+                    filter: drop-shadow(0.5px 2.5px 0.5px white);
+                    width: 45px;
+                }
+            }
+
+            #links {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100%;
+                img {
+                    width: 65px;
+                }
+            }
+        }
+    }
+
+    .habilidades {
+        #hab {
+            img {
+                width: 125px;
+                margin: 1.5rem;
+            }
+        }
+    }
+
+    #contato {
+        padding: 0;
+        margin: 0;
+        h1 {
+            font-size: 35px;
+            padding: 2.5rem;
+        }
+    }
+
+    footer {
+        h1 {
+            margin: 2.5rem;
+        }
+        #redes {
+            width: 900px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .projetos {
+        height: 100vh;
+        #projeto {
+            width: 400px;
+            height: 600px;
+
+            .tecs {
+                width: 100%;
+                img {
+                    width: 35px;
+                }
+            }
+
+            #links {
+                img {
+                    width: 45px;
+                }
+            }
+        }
+    }
+
+    .habilidades {
+        #hab {
+            img {
+                width: 90px;
+            }
+        }
+    }
+}
+
 @media  screen and (max-width:460px) {
     #menu {
         display: none;
@@ -399,6 +508,8 @@ footer {
     .projetos {
         padding: 0;
         margin: 0;
+        height: auto;
+        width: 410px;
         h1 {
             font-size: 25px;
         }
@@ -406,6 +517,8 @@ footer {
         #projeto {
             padding:2rem;
             margin: 1.2rem 1rem 1.5rem 1rem;
+            width: 385px;
+            margin: 1.2rem 0rem 2rem 0rem;
         }
         #cards {
             display: flex;
@@ -418,28 +531,30 @@ footer {
     }
 
     .habilidades {
-        margin-top: 905px;
+        height: auto;
+        margin-top: 0;
     }
 
     #contato {
-        margin-top: -155px;
+        margin-top: 0;
+        height: auto;
+        padding-top: 5.5rem;
         width: 350px;
-        position: absolute;
-        left: 35px;
-
-        form {
-            margin-top: -1px;
-            margin-bottom: 105px;
-        }
     }
 
     footer {
         font-size: 10px;
-        margin-top: 755px;
+        height: auto;
+        margin-top: 0;
         #redes {
             display: flex;
+            width: 399px;
             flex-wrap: wrap;
             flex-direction: row;
+
+            img {
+                width: 45px;
+            }
         }
     }
 
@@ -477,15 +592,49 @@ footer {
     }
 
     .projetos {
+        height: auto;
         #projeto {
         width: 350px;
+        }
     }
+
+    .habilidades {
+        height: auto;
+        margin-top: 0;
+        #hab {
+            img {
+                width: 55px;
+            }
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+        }
     }
 
     #contato {
-        width: 350px;
+        width: 345px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 5rem;
+        height: auto;
         position: absolute;
         left: 25px;
+    }
+
+    footer {
+        #redes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 385px;
+            img {
+                width: 45px;
+            }
+        }
     }
 
     #back {
@@ -493,6 +642,41 @@ footer {
 
         a {
             font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .projetos {
+        width: 365px;
+        margin: auto;
+        #projeto {
+            width: 355px;
+        }
+    }
+
+    #contato {
+        width: 329px;
+        height: auto;
+        margin: auto;
+    }
+
+    footer {
+        width: 300px;
+        margin: auto;
+        h1 {
+            margin: 0;
+        }
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 5rem;
+        #redes {
+            width: 295px;
+            margin: auto;
+            img {
+                width: 35px;
+            }
         }
     }
 }

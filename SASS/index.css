@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&family=Oswald:wght@400;600&family=Poppins:wght@200;400;600&family=Roboto:wght@400;900&family=Zeyada&display=swap");
+::-moz-selection {
+  color: grey;
+  background-color: indigo;
+}
+::selection {
+  color: grey;
+  background-color: indigo;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -78,7 +87,8 @@ header .menu a {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 5px;
+  padding-top: 15px;
+  width: auto;
   padding-bottom: 15px;
 }
 .projetos #cards {
@@ -95,6 +105,11 @@ header .menu a {
   border-radius: 55px;
   margin: 2.5rem;
   transition: 0.5s;
+}
+.projetos #projeto h3 {
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
 }
 .projetos #projeto:hover {
   transform: scale(1.02);
@@ -256,6 +271,83 @@ footer #back a {
   display: none;
 }
 
+@media screen and (max-width: 1920px) {
+  .projetos {
+    padding-top: 2rem;
+  }
+  .projetos #pjs {
+    padding-bottom: 2rem;
+  }
+  .projetos #projeto {
+    width: 550px;
+    padding-top: 2rem;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    height: 750px;
+  }
+  .projetos #projeto .tecs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .projetos #projeto .tecs img {
+    filter: drop-shadow(0.5px 2.5px 0.5px white);
+    width: 45px;
+  }
+  .projetos #projeto #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .projetos #projeto #links img {
+    width: 65px;
+  }
+  .habilidades #hab img {
+    width: 125px;
+    margin: 1.5rem;
+  }
+  #contato {
+    padding: 0;
+    margin: 0;
+  }
+  #contato h1 {
+    font-size: 35px;
+    padding: 2.5rem;
+  }
+  footer h1 {
+    margin: 2.5rem;
+  }
+  footer #redes {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .projetos {
+    height: 100vh;
+  }
+  .projetos #projeto {
+    width: 400px;
+    height: 600px;
+  }
+  .projetos #projeto .tecs {
+    width: 100%;
+  }
+  .projetos #projeto .tecs img {
+    width: 35px;
+  }
+  .projetos #projeto #links img {
+    width: 45px;
+  }
+  .habilidades #hab img {
+    width: 90px;
+  }
+}
 @media screen and (max-width: 460px) {
   #menu {
     display: none;
@@ -362,6 +454,8 @@ footer #back a {
   .projetos {
     padding: 0;
     margin: 0;
+    height: auto;
+    width: 410px;
   }
   .projetos h1 {
     font-size: 25px;
@@ -369,6 +463,8 @@ footer #back a {
   .projetos #projeto {
     padding: 2rem;
     margin: 1.2rem 1rem 1.5rem 1rem;
+    width: 385px;
+    margin: 1.2rem 0rem 2rem 0rem;
   }
   .projetos #cards {
     display: flex;
@@ -379,26 +475,28 @@ footer #back a {
     margin: 0;
   }
   .habilidades {
-    margin-top: 905px;
+    height: auto;
+    margin-top: 0;
   }
   #contato {
-    margin-top: -155px;
+    margin-top: 0;
+    height: auto;
+    padding-top: 5.5rem;
     width: 350px;
-    position: absolute;
-    left: 35px;
-  }
-  #contato form {
-    margin-top: -1px;
-    margin-bottom: 105px;
   }
   footer {
     font-size: 10px;
-    margin-top: 755px;
+    height: auto;
+    margin-top: 0;
   }
   footer #redes {
     display: flex;
+    width: 399px;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+  footer #redes img {
+    width: 45px;
   }
   #back a {
     font-size: 20px;
@@ -429,18 +527,82 @@ footer #back a {
     font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
     padding: 1rem;
   }
+  .projetos {
+    height: auto;
+  }
   .projetos #projeto {
     width: 350px;
   }
+  .habilidades {
+    height: auto;
+    margin-top: 0;
+  }
+  .habilidades #hab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .habilidades #hab img {
+    width: 55px;
+  }
   #contato {
-    width: 350px;
+    width: 345px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 5rem;
+    height: auto;
     position: absolute;
     left: 25px;
+  }
+  footer #redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 385px;
+  }
+  footer #redes img {
+    width: 45px;
   }
   #back {
     display: block;
   }
   #back a {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .projetos {
+    width: 365px;
+    margin: auto;
+  }
+  .projetos #projeto {
+    width: 355px;
+  }
+  #contato {
+    width: 329px;
+    height: auto;
+    margin: auto;
+  }
+  footer {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 5rem;
+  }
+  footer h1 {
+    margin: 0;
+  }
+  footer #redes {
+    width: 295px;
+    margin: auto;
+  }
+  footer #redes img {
+    width: 35px;
   }
 }/*# sourceMappingURL=index.css.map */
