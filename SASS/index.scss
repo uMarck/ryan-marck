@@ -271,21 +271,19 @@ footer {
             }
         }
     }
-
-    #back {
-        margin-top: 55px;
-        border: 2px solid white;
-        padding: 1rem;
-        border-radius: 10px;
-        a {
-            color: white;
-            text-decoration: none;
-        }
-    }
 }
 
-.asn-mb {
-    display: none;
+button {
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: $font;
+    font-weight: bold;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
 }
 
 @media screen and (max-width: 1920px) {
@@ -613,6 +611,7 @@ footer {
     }
 
     #contato {
+        display: none;
         width: 345px;
         display: flex;
         justify-content: center;
@@ -625,6 +624,7 @@ footer {
     }
 
     footer {
+        display: none;
         #redes {
             display: flex;
             flex-direction: row;
@@ -636,14 +636,6 @@ footer {
             }
         }
     }
-
-    #back {
-        display: block;
-
-        a {
-            font-size: 25px;
-        }
-    }
 }
 
 @media screen and (max-width: 375px) {
@@ -651,19 +643,25 @@ footer {
         width: 365px;
         margin: auto;
         #projeto {
-            width: 355px;
+            width: 345px;
+            height: 50%;
+            img {
+                width: 200px;
+            }
         }
     }
 
     #contato {
-        width: 329px;
-        height: auto;
+        max-width: 87%;
+        height: 100%;
         margin: auto;
+        padding: 0;
     }
 
     footer {
-        width: 300px;
+        max-width: 100%;
         margin: auto;
+        height: 100%;
         h1 {
             margin: 0;
         }

@@ -256,19 +256,18 @@ footer #redes #rd {
 footer #redes #rd:hover {
   transform: scale(1.2);
 }
-footer #back {
-  margin-top: 55px;
-  border: 2px solid white;
-  padding: 1rem;
-  border-radius: 10px;
-}
-footer #back a {
-  color: white;
-  text-decoration: none;
-}
 
-.asn-mb {
-  display: none;
+button {
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  outline: none;
 }
 
 @media screen and (max-width: 1920px) {
@@ -547,6 +546,7 @@ footer #back a {
     width: 55px;
   }
   #contato {
+    display: none;
     width: 345px;
     display: flex;
     justify-content: center;
@@ -556,6 +556,9 @@ footer #back a {
     height: auto;
     position: absolute;
     left: 25px;
+  }
+  footer {
+    display: none;
   }
   footer #redes {
     display: flex;
@@ -567,12 +570,6 @@ footer #back a {
   footer #redes img {
     width: 45px;
   }
-  #back {
-    display: block;
-  }
-  #back a {
-    font-size: 25px;
-  }
 }
 @media screen and (max-width: 375px) {
   .projetos {
@@ -580,16 +577,22 @@ footer #back a {
     margin: auto;
   }
   .projetos #projeto {
-    width: 355px;
+    width: 345px;
+    height: 50%;
+  }
+  .projetos #projeto img {
+    width: 200px;
   }
   #contato {
-    width: 329px;
-    height: auto;
+    max-width: 87%;
+    height: 100%;
     margin: auto;
+    padding: 0;
   }
   footer {
-    width: 300px;
+    max-width: 100%;
     margin: auto;
+    height: 100%;
     text-align: center;
     margin-top: 0;
     padding-top: 0;
