@@ -9,6 +9,7 @@
 </head>
 <body>
     <header id="menu">
+        <div id="tp"></div>
         <div class="menu">
             <a href="#pjs">Projetos</a>
             <a href="#hbd">Habilidades</a>
@@ -24,7 +25,6 @@
                 <li><a href="#pjs">Projetos</a></li>
                 <li><a href="#hbd">Habilidades</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><a href="">Redes</a></li><br>
             </ul>
         </menu>
     </div>
@@ -184,9 +184,10 @@
             <div id="rd"><a target="_blank" href="https://twitter.com/eomarckk_"><img src="./IMAGENS/twitter.png" width="55px" alt=""></a></div>
             <div id="rd"><a target="_blank" href="https://bit.ly/gmail-marck"><img src="./IMAGENS/gmail.png" width="55px" alt=""></a></div>
         </div>
-        <div id="back">
-            <a href="#menu-bg"><h5>Voltar ao topo</h5></a>
-        </div>
+        <!-- <div id="back">
+            <a href="#tp"><h5>Voltar ao topo</h5></a>
+        </div> -->
+        <button id="back-to-top">VOLTAR AO TOPO</button>
     </footer>
 
     <script src="animation.js"></script>
@@ -198,6 +199,11 @@
                 itens.style.display = "block";
             }
         }
+
+        let btn = document.getElementById('back-to-top');
+        btn.addEventListener('click', function() {
+            window.scrollTo(0, 0)
+        })
     </script>
 </body>
 </html>
