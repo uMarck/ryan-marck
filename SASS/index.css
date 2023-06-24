@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&family=Oswald:wght@400;600&family=Poppins:wght@200;400;600&family=Roboto:wght@400;900&family=Zeyada&display=swap");
-::-moz-selection {
-  color: grey;
-  background-color: indigo;
-}
-::selection {
-  color: grey;
-  background-color: indigo;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -18,333 +9,245 @@ body {
   background-color: #191919;
 }
 
-.menu-bg {
-  display: none;
-}
-
-header {
-  padding: 15px;
-}
-header .menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-header .menu a {
-  text-decoration: none;
-  color: white;
-  font-family: "Montserrat", Verdana, Tahoma;
-  margin-left: 10px;
-  margin-right: 60px;
-}
-
-.eu {
-  height: 100vh;
-  text-align: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  color: white;
-  font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-  background-image: linear-gradient(#191919 45%, #1f1f1f 55%);
-}
-.eu #pri {
-  text-align: left;
-}
-.eu #pri #asn {
-  font-family: "Zeyada";
-  font-size: 55px;
-}
-.eu p {
-  padding-top: 15px;
-}
-.eu #sobre {
-  padding-top: 20px;
-}
-.eu #sobre p {
-  padding: 0.3rem;
-}
-
-.projetos {
-  height: 100vh;
-  color: white;
-  font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-}
-.projetos h1 {
-  text-align: center;
-  padding-top: 15px;
-}
-.projetos h3 {
-  text-align: center;
-}
-.projetos .tecs {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-top: 15px;
-  width: auto;
-  padding-bottom: 15px;
-}
-.projetos #cards {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-.projetos #projeto {
-  background-color: #242424;
-  width: 355px;
-  padding: 2.2rem;
-  height: 500px;
-  border-radius: 55px;
-  margin: 2.5rem;
-  transition: 0.5s;
-}
-.projetos #projeto h3 {
-  font-weight: bold;
-  margin: auto;
-  text-align: center;
-}
-.projetos #projeto:hover {
-  transform: scale(1.02);
-}
-.projetos #projeto #img {
-  max-width: 100%;
-  border-radius: 15px;
-}
-.projetos #projeto p {
-  padding-top: 10px;
-  text-align: center;
-}
-.projetos #projeto #links {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding-top: 35px;
-}
-.projetos #projeto #links img {
-  filter: invert(2);
-  transition: 0.5s;
-}
-.projetos #projeto #links img:hover {
-  transform: scale(1.2);
-}
-
-.habilidades {
-  height: 100vh;
-  color: white;
-  font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-  text-align: center;
-}
-.habilidades h1 {
-  padding-top: 25px;
-}
-.habilidades #hab {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.habilidades #hab img {
-  margin: 1rem;
-  transition: 0.5s;
-}
-.habilidades #hab img:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0px 2px 0.5px white);
-}
-
-#contato {
-  height: 100vh;
-  color: white;
-  font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#contato h1, #contato h2 {
-  font-size: 30px;
-  color: #FFF;
-  line-height: 1.2rem;
-  text-align: center;
-}
-#contato h1::before {
-  display: block;
-}
-#contato h2::before {
-  display: block;
-}
-#contato .form {
-  width: 100%;
-  max-width: 32rem;
-  font-size: 1.25rem;
-}
-#contato .form label,
-#contato .form input,
-#contato .form textarea,
-#contato .form button {
-  display: block;
-  width: 100%;
-}
-#contato .form label {
-  color: #FFF;
-  line-height: 1;
-  margin-bottom: 0.5rem;
-}
-#contato .form input,
-#contato .form textarea {
-  font: inherit;
-  padding: 0.8rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  transition: 0.5s;
-}
-#contato .form textarea {
-  min-height: 13rem;
-  resize: vertical;
-}
-#contato .form input:hover,
-#contato .form input:focus,
-#contato .form textarea:hover,
-#contato .form textarea:focus {
-  outline: none;
-  border-color: #09D;
-  box-shadow: 0 0 0 3px #4DC8FF;
-}
-#contato .form button {
-  display: block;
-  padding: 1rem;
-  background-color: #0072C4;
-  color: #FFF;
-  font: inherit;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  height: 100vh;
-  color: white;
-  font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-}
-footer #redes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-footer #redes #rd {
-  padding: 1rem;
-  transition: 0.5s;
-}
-footer #redes #rd:hover {
-  transform: scale(1.2);
-}
-
-button {
-  cursor: pointer;
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-  font-weight: bold;
-  background-color: transparent;
-  text-decoration: none;
-  outline: none;
-}
-
-@media screen and (max-width: 1920px) {
-  .projetos {
-    padding-top: 2rem;
+@media screen and (max-width: 1366px) {
+  .menu-bg {
+    display: none;
   }
-  .projetos #pjs {
-    padding-bottom: 2rem;
+  header {
+    padding: 15px;
   }
-  .projetos #projeto {
-    width: 550px;
-    padding-top: 2rem;
-    margin: auto;
-    display: grid;
-    place-items: center;
-    height: 750px;
-  }
-  .projetos #projeto .tecs {
+  header .menu {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
   }
-  .projetos #projeto .tecs img {
-    filter: drop-shadow(0.5px 2.5px 0.5px white);
-    width: 45px;
+  header .menu a {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", Verdana, Tahoma;
+    margin-left: 10px;
+    margin-right: 60px;
   }
-  .projetos #projeto #links {
+  .eu {
+    height: 100vh;
+    text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
+    background-image: linear-gradient(#191919 45%, #1f1f1f 55%);
   }
-  .projetos #projeto #links img {
-    width: 65px;
+  .eu #pri {
+    text-align: left;
   }
-  .habilidades #hab img {
-    width: 125px;
-    margin: 1.5rem;
+  .eu #pri #asn {
+    font-family: "Zeyada";
+    font-size: 55px;
   }
-  #contato {
-    padding: 0;
-    margin: 0;
+  .eu p {
+    padding-top: 15px;
   }
-  #contato h1 {
-    font-size: 35px;
-    padding: 2.5rem;
+  .eu #sobre {
+    padding-top: 20px;
   }
-  footer h1 {
-    margin: 2.5rem;
+  .eu #sobre p {
+    padding: 0.3rem;
   }
-  footer #redes {
-    width: 900px;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 1366px) {
   .projetos {
-    height: 100vh;
+    height: auto;
+    color: white;
+    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
+  }
+  .projetos h1 {
+    text-align: center;
+    padding-top: 15px;
+  }
+  .projetos h3 {
+    text-align: center;
+  }
+  .projetos .tecs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+  .projetos #cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
   .projetos #projeto {
-    width: 400px;
-    height: 600px;
+    background-color: #242424;
+    width: 355px;
+    padding: 2.2rem;
+    border-radius: 55px;
+    margin: 2.5rem;
+    transition: 0.5s;
   }
-  .projetos #projeto .tecs {
-    width: 100%;
+  .projetos #projeto:hover {
+    transform: scale(1.02);
   }
-  .projetos #projeto .tecs img {
-    width: 35px;
+  .projetos #projeto #img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  .projetos #projeto p {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .projetos #projeto #links {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 35px;
   }
   .projetos #projeto #links img {
-    width: 45px;
+    filter: invert(2);
+    transition: 0.5s;
   }
-  .habilidades #hab img {
-    width: 90px;
+  .projetos #projeto #links img:hover {
+    transform: scale(1.2);
+  }
+  .habilidades {
+    height: 100vh;
+    color: white;
+    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
+    text-align: center;
+  }
+  .habilidades h1 {
+    padding-top: 25px;
+  }
+  .habilidades #all-hb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    max-width: 1100px;
+  }
+  .habilidades #all-hb #hb {
+    margin: 1.5rem;
+    transition: 0.5s;
+  }
+  .habilidades #all-hb #hb:hover {
+    transform: scale(1.1);
+  }
+  #contato {
+    height: 100vh;
+    color: white;
+    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #contato h1, #contato h2 {
+    font-size: 30px;
+    color: #FFF;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+  #contato h1::before {
+    display: block;
+  }
+  #contato h2::before {
+    display: block;
+  }
+  #contato .form {
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.25rem;
+  }
+  #contato .form label,
+  #contato .form input,
+  #contato .form textarea,
+  #contato .form button {
+    display: block;
+    width: 100%;
+  }
+  #contato .form label {
+    color: #FFF;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  #contato .form input,
+  #contato .form textarea {
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+  #contato .form textarea {
+    min-height: 13rem;
+    resize: vertical;
+  }
+  #contato .form input:hover,
+  #contato .form input:focus,
+  #contato .form textarea:hover,
+  #contato .form textarea:focus {
+    outline: none;
+    border-color: #09D;
+    box-shadow: 0 0 0 3px #4DC8FF;
+  }
+  #contato .form button {
+    display: block;
+    padding: 1rem;
+    background-color: #0072C4;
+    color: #FFF;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 100vh;
+    color: white;
+    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
+  }
+  footer #redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  footer #redes #rd {
+    padding: 1rem;
+    transition: 0.5s;
+  }
+  footer #redes #rd:hover {
+    transform: scale(1.2);
+  }
+  footer #back {
+    margin-top: 55px;
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  footer #back a {
+    color: white;
+    text-decoration: none;
+  }
+  .asn-mb {
+    display: none;
   }
 }
 @media screen and (max-width: 460px) {
@@ -381,12 +284,17 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: auto;
   }
   .eu #pri {
     text-align: center;
   }
   .eu img {
     width: 355px;
+    margin-bottom: 7.5rem;
+  }
+  .projetos {
+    height: auto;
   }
   .projetos #cards {
     display: flex;
@@ -396,7 +304,13 @@ button {
     max-width: 460px;
   }
   .habilidades {
-    margin-top: 1095px;
+    height: auto;
+    margin-top: 0;
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   #contato {
     width: 400px;
@@ -453,8 +367,6 @@ button {
   .projetos {
     padding: 0;
     margin: 0;
-    height: auto;
-    width: 410px;
   }
   .projetos h1 {
     font-size: 25px;
@@ -462,8 +374,6 @@ button {
   .projetos #projeto {
     padding: 2rem;
     margin: 1.2rem 1rem 1.5rem 1rem;
-    width: 385px;
-    margin: 1.2rem 0rem 2rem 0rem;
   }
   .projetos #cards {
     display: flex;
@@ -474,28 +384,31 @@ button {
     margin: 0;
   }
   .habilidades {
+    margin-top: 0px;
     height: auto;
-    margin-top: 0;
+  }
+  .habilidades #all-hb {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
   }
   #contato {
+    padding-top: 85px;
     margin-top: 0;
+    width: 410px;
+    position: relative;
     height: auto;
-    padding-top: 5.5rem;
-    width: 350px;
   }
   footer {
-    font-size: 10px;
-    height: auto;
-    margin-top: 0;
+    position: relative;
+    top: 550px;
+    text-align: center;
   }
   footer #redes {
     display: flex;
-    width: 399px;
     flex-wrap: wrap;
     flex-direction: row;
-  }
-  footer #redes img {
-    width: 45px;
   }
   #back a {
     font-size: 20px;
@@ -526,86 +439,85 @@ button {
     font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
     padding: 1rem;
   }
-  .projetos {
-    height: auto;
-  }
   .projetos #projeto {
     width: 350px;
   }
-  .habilidades {
-    height: auto;
-    margin-top: 0;
-  }
-  .habilidades #hab {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .habilidades #hab img {
-    width: 55px;
-  }
   #contato {
-    display: none;
-    width: 345px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding-top: 5rem;
-    height: auto;
+    width: 350px;
     position: absolute;
     left: 25px;
   }
-  footer {
-    display: none;
+  #back {
+    display: block;
   }
-  footer #redes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 385px;
-  }
-  footer #redes img {
-    width: 45px;
+  #back a {
+    font-size: 25px;
   }
 }
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
   .projetos {
-    width: 365px;
     margin: auto;
+    max-width: 375px;
   }
-  .projetos #projeto {
-    width: 345px;
-    height: 50%;
+  .projetos #cards {
+    max-width: 100%;
   }
-  .projetos #projeto img {
-    width: 200px;
+  .projetos #cards #projeto {
+    max-width: 355px;
+    margin: 1rem 0 1rem 0;
   }
   #contato {
-    max-width: 87%;
-    height: 100%;
+    max-width: 330px;
     margin: auto;
-    padding: 0;
-  }
-  footer {
-    max-width: 100%;
-    margin: auto;
-    height: 100%;
     text-align: center;
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 5rem;
+    height: 100vh;
   }
-  footer h1 {
-    margin: 0;
+}
+@media (max-width: 360px) {
+  .teste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  footer #redes {
-    width: 295px;
+  .teste #text {
+    width: 335px;
     margin: auto;
+    text-align: center;
   }
-  footer #redes img {
-    width: 35px;
+  .teste #text h1 {
+    font-size: 22px;
+  }
+  .teste #text p {
+    line-height: 20px;
+    font-size: 13.2px;
+  }
+  .teste img {
+    padding-top: 1.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .teste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .teste #text {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .teste #text h1 {
+    font-size: 18px;
+  }
+  .teste #text p {
+    font-size: 11.5px;
+    line-height: 18.5px;
+  }
+  .teste img {
+    width: 255px;
+    margin-top: -30px;
   }
 }/*# sourceMappingURL=index.css.map */
