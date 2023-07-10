@@ -133,4 +133,125 @@ header #menu a {
 }
 #contato #redes a img:hover {
   transform: scale(1.03);
+}
+
+@media screen and (max-width: 1920px) {
+  .container {
+    height: 85vh;
+  }
+  .container #sobre {
+    line-height: 50px;
+  }
+  .container #sobre h2 {
+    font-size: 35px;
+  }
+  .container #sobre h4 {
+    font-size: 25px;
+  }
+  .container #sobre h3 {
+    font-size: 25px;
+  }
+  .container #foto img {
+    width: 700px;
+  }
+  #projetos {
+    height: 100vh;
+  }
+  #projetos #cards {
+    flex-wrap: wrap;
+  }
+  #projetos #cards #card a img {
+    width: 650px;
+  }
+  #conhecimento {
+    height: 100vh;
+  }
+  #conhecimento #icons #card img {
+    width: 165px;
+    transition: 0.3s;
+  }
+  #conhecimento #icons #card img:hover {
+    transform: translateY(-10px);
+  }
+  #mb {
+    display: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  header {
+    padding: 1.5rem;
+  }
+  header #redes {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container #sobre {
+    text-align: center;
+  }
+  .container #sobre h2 {
+    font-size: 20px;
+  }
+  .container #sobre h3 {
+    font-size: 20px;
+  }
+  .container #sobre h4 {
+    font-size: 15px;
+  }
+  .container #foto img {
+    width: 300px;
+  }
+  #projetos {
+    height: auto;
+  }
+  #projetos #cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #projetos #cards #card {
+    padding-top: 2rem;
+  }
+  #projetos #cards #card a img {
+    width: 400px;
+  }
+  #conhecimento {
+    height: auto;
+  }
+  #conhecimento h1 {
+    padding-top: 2rem;
+  }
+  #conhecimento #cards {
+    margin: auto;
+  }
+  #conhecimento #cards #icons {
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  #conhecimento #cards #icons img {
+    width: 105px;
+    margin: 2rem;
+    padding: 0;
+  }
+  #contato {
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
+    display: grid;
+    place-content: center;
+    place-items: center;
+  }
+  #contato #mb {
+    display: inline;
+  }
+  #contato #redes {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #contato h1 {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=index.css.map */
