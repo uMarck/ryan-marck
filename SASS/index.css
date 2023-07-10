@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600&family=Oswald:wght@400;600&family=Poppins:wght@200;400;600&family=Roboto:wght@400;900&family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Oswald:wght@400;700&family=Poppins:wght@400;600;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,518 +6,131 @@
 }
 
 body {
+  font-family: "Montserrat", "Poppins", Verdana, Tahoma;
   background-color: #191919;
 }
 
-@media screen and (max-width: 1366px) {
-  .menu-bg {
-    display: none;
-  }
-  header {
-    padding: 15px;
-  }
-  header .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  header .menu a {
-    text-decoration: none;
-    color: white;
-    font-family: "Montserrat", Verdana, Tahoma;
-    margin-left: 10px;
-    margin-right: 60px;
-  }
-  .eu {
-    height: 100vh;
-    text-align: center;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-            user-select: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-    background-image: linear-gradient(#191919 45%, #1f1f1f 55%);
-  }
-  .eu #pri {
-    text-align: left;
-  }
-  .eu #pri #asn {
-    font-family: "Zeyada";
-    font-size: 55px;
-  }
-  .eu p {
-    padding-top: 15px;
-  }
-  .eu #sobre {
-    padding-top: 20px;
-  }
-  .eu #sobre p {
-    padding: 0.3rem;
-  }
-  .projetos {
-    height: auto;
-    color: white;
-    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-  }
-  .projetos h1 {
-    text-align: center;
-    padding-top: 15px;
-  }
-  .projetos h3 {
-    text-align: center;
-  }
-  .projetos .tecs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 5px;
-    padding-bottom: 15px;
-  }
-  .projetos #cards {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .projetos #projeto {
-    background-color: #242424;
-    width: 355px;
-    padding: 2.2rem;
-    border-radius: 55px;
-    margin: 2.5rem;
-    transition: 0.5s;
-  }
-  .projetos #projeto:hover {
-    transform: scale(1.02);
-  }
-  .projetos #projeto #img {
-    max-width: 100%;
-    border-radius: 15px;
-  }
-  .projetos #projeto p {
-    padding-top: 10px;
-    text-align: center;
-  }
-  .projetos #projeto #links {
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 35px;
-  }
-  .projetos #projeto #links img {
-    filter: invert(2);
-    transition: 0.5s;
-  }
-  .projetos #projeto #links img:hover {
-    transform: scale(1.2);
-  }
-  .habilidades {
-    height: 100vh;
-    color: white;
-    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-    text-align: center;
-  }
-  .habilidades h1 {
-    padding-top: 25px;
-  }
-  .habilidades #all-hb {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: auto;
-    max-width: 1100px;
-  }
-  .habilidades #all-hb #hb {
-    margin: 1.5rem;
-    transition: 0.5s;
-  }
-  .habilidades #all-hb #hb:hover {
-    transform: scale(1.1);
-  }
-  #contato {
-    height: 100vh;
-    color: white;
-    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  #contato h1, #contato h2 {
-    font-size: 30px;
-    color: #FFF;
-    line-height: 1.2rem;
-    text-align: center;
-  }
-  #contato h1::before {
-    display: block;
-  }
-  #contato h2::before {
-    display: block;
-  }
-  #contato .form {
-    width: 100%;
-    max-width: 32rem;
-    font-size: 1.25rem;
-  }
-  #contato .form label,
-  #contato .form input,
-  #contato .form textarea,
-  #contato .form button {
-    display: block;
-    width: 100%;
-  }
-  #contato .form label {
-    color: #FFF;
-    line-height: 1;
-    margin-bottom: 0.5rem;
-  }
-  #contato .form input,
-  #contato .form textarea {
-    font: inherit;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    transition: 0.5s;
-  }
-  #contato .form textarea {
-    min-height: 13rem;
-    resize: vertical;
-  }
-  #contato .form input:hover,
-  #contato .form input:focus,
-  #contato .form textarea:hover,
-  #contato .form textarea:focus {
-    outline: none;
-    border-color: #09D;
-    box-shadow: 0 0 0 3px #4DC8FF;
-  }
-  #contato .form button {
-    display: block;
-    padding: 1rem;
-    background-color: #0072C4;
-    color: #FFF;
-    font: inherit;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.5s;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    height: 100vh;
-    color: white;
-    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-  }
-  footer #redes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  footer #redes #rd {
-    padding: 1rem;
-    transition: 0.5s;
-  }
-  footer #redes #rd:hover {
-    transform: scale(1.2);
-  }
-  footer #back {
-    margin-top: 55px;
-    border: 2px solid white;
-    padding: 1rem;
-    border-radius: 10px;
-  }
-  footer #back a {
-    color: white;
-    text-decoration: none;
-  }
-  .asn-mb {
-    display: none;
-  }
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #292929;
 }
-@media screen and (max-width: 460px) {
-  #menu {
-    display: none;
-  }
-  .menu-bg {
-    display: block;
-  }
-  .menu-bg #bgr {
-    position: relative;
-    left: 360px;
-    filter: invert(2);
-  }
-  .menu-bg ul {
-    list-style: none;
-  }
-  .menu-bg ul li {
-    padding: 1rem;
-    border: 1px solid white;
-    text-align: center;
-    max-width: 350px;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-  .menu-bg ul a {
-    color: white;
-    text-decoration: none;
-    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-    padding: 1rem;
-  }
-  .eu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-  }
-  .eu #pri {
-    text-align: center;
-  }
-  .eu img {
-    width: 355px;
-    margin-bottom: 7.5rem;
-  }
-  .projetos {
-    height: auto;
-  }
-  .projetos #cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 460px;
-  }
-  .habilidades {
-    height: auto;
-    margin-top: 0;
-    width: 300px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #contato {
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
+header #redes a {
+  text-decoration: none;
+  padding: 0.5rem;
 }
-@media screen and (max-width: 414px) {
-  #menu {
-    display: none;
-  }
-  .menu-bg {
-    display: block;
-  }
-  .menu-bg #bgr {
-    position: relative;
-    left: 338px;
-    filter: invert(2);
-  }
-  .menu-bg ul {
-    list-style: none;
-  }
-  .menu-bg ul li {
-    padding: 1rem;
-    border: 1px solid white;
-    text-align: center;
-    max-width: 350px;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-  .menu-bg ul a {
-    color: white;
-    text-decoration: none;
-    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-    padding: 1rem;
-  }
-  .eu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-    background-image: none;
-    margin: 0;
-    padding: 0;
-  }
-  .eu #pri {
-    text-align: center;
-  }
-  .eu img {
-    width: 385px;
-  }
-  .projetos {
-    padding: 0;
-    margin: 0;
-  }
-  .projetos h1 {
-    font-size: 25px;
-  }
-  .projetos #projeto {
-    padding: 2rem;
-    margin: 1.2rem 1rem 1.5rem 1rem;
-  }
-  .projetos #cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-  }
-  .habilidades {
-    margin-top: 0px;
-    height: auto;
-  }
-  .habilidades #all-hb {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  #contato {
-    padding-top: 85px;
-    margin-top: 0;
-    width: 410px;
-    position: relative;
-    height: auto;
-  }
-  footer {
-    position: relative;
-    top: 550px;
-    text-align: center;
-  }
-  footer #redes {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  #back a {
-    font-size: 20px;
-  }
+header #redes a img {
+  transition: 0.5s;
 }
-@media screen and (max-width: 390px) {
-  .menu-bg {
-    display: block;
-  }
-  .menu-bg #bgr {
-    position: relative;
-    left: 325px;
-    filter: invert(2);
-  }
-  .menu-bg ul {
-    list-style: none;
-  }
-  .menu-bg ul li {
-    padding: 1rem;
-    border: 1px solid white;
-    text-align: center;
-    max-width: 350px;
-    margin: auto;
-  }
-  .menu-bg ul a {
-    color: white;
-    text-decoration: none;
-    font-family: "Montserrat", "Roboto", "Poppins", "Oswald", "Zeyada", Verdana, Tahoma;
-    padding: 1rem;
-  }
-  .projetos #projeto {
-    width: 350px;
-  }
-  #contato {
-    width: 350px;
-    position: absolute;
-    left: 25px;
-  }
-  #back {
-    display: block;
-  }
-  #back a {
-    font-size: 25px;
-  }
+header #redes a img:hover {
+  transform: translateY(-5px);
 }
-@media (max-width: 375px) {
-  .projetos {
-    margin: auto;
-    max-width: 375px;
-  }
-  .projetos #cards {
-    max-width: 100%;
-  }
-  .projetos #cards #projeto {
-    max-width: 355px;
-    margin: 1rem 0 1rem 0;
-  }
-  #contato {
-    max-width: 330px;
-    margin: auto;
-    text-align: center;
-    height: 100vh;
-  }
+header #menu a {
+  padding: 0.5rem 2.5rem;
+  margin: 0.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  border: 3px solid rgba(255, 255, 255, 0.158);
+  border-radius: 10px;
 }
-@media (max-width: 360px) {
-  .teste {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .teste #text {
-    width: 335px;
-    margin: auto;
-    text-align: center;
-  }
-  .teste #text h1 {
-    font-size: 22px;
-  }
-  .teste #text p {
-    line-height: 20px;
-    font-size: 13.2px;
-  }
-  .teste img {
-    padding-top: 1.5rem;
-  }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  margin: auto;
+  color: white;
+  width: 75%;
+  padding: 2rem 0;
 }
-@media (max-width: 320px) {
-  .teste {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .teste #text {
-    width: 300px;
-    margin: auto;
-    text-align: center;
-    padding-top: 10px;
-  }
-  .teste #text h1 {
-    font-size: 18px;
-  }
-  .teste #text p {
-    font-size: 11.5px;
-    line-height: 18.5px;
-  }
-  .teste img {
-    width: 255px;
-    margin-top: -30px;
-  }
+.container #sobre {
+  line-height: 30px;
+}
+.container #sobre h2 {
+  font-family: "Poppins", "Montserrat", Verdana, Tahoma;
+}
+
+#gif {
+  margin: auto;
+  text-align: center;
+}
+#gif img {
+  width: 90px;
+}
+
+#projetos {
+  height: auto;
+}
+#projetos h1 {
+  color: white;
+  text-align: center;
+  margin: 0.5rem;
+  padding-top: 2.5rem;
+}
+#projetos #cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+#projetos #cards #card a img {
+  transition: 0.5s;
+}
+#projetos #cards #card a img:hover {
+  transform: scale(1rem);
+}
+#projetos #cards a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", "Poppins", Verdana, Tahoma;
+}
+
+#conhecimento h1 {
+  color: white;
+  text-align: center;
+}
+#conhecimento #cards {
+  height: 100vh;
+}
+#conhecimento #cards #icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#conhecimento #cards #icons img {
+  margin: 2.2rem;
+  width: 100px;
+  transition: 0.3s;
+}
+#conhecimento #cards #icons img:hover {
+  transform: scale(1.02);
+}
+
+#contato {
+  height: auto;
+  text-align: center;
+}
+#contato h1 {
+  color: white;
+}
+#contato #redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#contato #redes a img {
+  margin: 1rem;
+  transition: 0.5s;
+}
+#contato #redes a img:hover {
+  transform: scale(1.03);
 }/*# sourceMappingURL=index.css.map */

@@ -8,189 +8,138 @@
     <link rel="stylesheet" href="./SASS/index.css">
 </head>
 <body>
-    <!--MENU PARA DESKTOP-->
-    <header id="menu">
-        <div class="menu">
-            <a href="#pjs">Projetos</a>
-            <a href="#hbd">Habilidades</a>
+    <header>
+        <div id="redes">
+            <a href="https://github.com/uMarck" target="_blank">
+                <img src="./IMAGENS/github.png" width="35px" alt="">
+            </a>
+            <a href="https://www.instagram.com/eomarckk_/" target="_blank">
+                <img src="./IMAGENS/instagram.png" width="35px" alt="">
+            </a>
+        </div>
+
+        <div id="menu">
             <a href="#contato">Contato</a>
-            <a href="./PDFS/RYAN MARCK EVANGELISTA DA SILVA.pdf" download="">Curriculo</a>
+            <a href="#projetos">Projetos</a>
         </div>
     </header>
-    <div id="top"></div>
-    <!--MENU PARA TELEFONE-->
-    <div class="menu-bg" id="menu-bg" onclick="clickMenu()">
-        <img id="bgr" src="./IMAGENS/ICONS/menu.png" width="50px" alt="">
-        <menu id="itens">
-            <ul>
-                <li><a href="#inicio">Sobre</a></li>
-                <li><a href="#pjs">Projetos</a></li>
-                <li><a href="#hbd">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="">Redes</a></li><br>
-            </ul>
-        </menu>
-    </div>
-    <!--INFORMAÇÕES-->
-    <div class="eu">
-        <div id="pri">
-            <h1>Olá, meu nome é</h1>
-            <h1 data-tilt id="asn">Ryan Marck</h1>
-            <p>Bem vindo(a) ao meu portfólio</p>
-            <h4 style="font-size: 10px; padding-top: 5px;">Designer Gráfico | Manaus - Amazonas</h4>
-            <h4 style="font-size: 10px; padding-top: 5px;">Desenvolvedor Full Stack | 20 Anos</h4>
-        </div>
+
+    <div class="container">
         <div id="sobre">
-            <img data-tilt src="./IMAGENS/SEM COR.png" width="555px" alt="">
+            <h2>Olá, meu nome é Ryan Marck</h2>
+            <h4>Designer Gráfico | Dev. Front-end JR</h4>
+            <h3>Manaus - AM</h3>
+        </div>
+        <div id="foto">
+            <img src="./IMAGENS/SEM COR.png" width="450px" alt="">
         </div>
     </div>
-    <!--MEUS PROJETOS-->
-    <div class="projetos">
-        <div id="pjs"><h1>Estes são meus projetos!</h1></div>
+
+    <div id="gif">
+        <img src="./IMAGENS/arrowDown.gif" width="50px" alt="">
+    </div>
+
+    <!--PROJETOS-->
+    <div id="projetos">
+        <h1>Meus Projetos</h1>
         <div id="cards">
-            <div id="projeto">
-                <div><img id="img" src="./IMAGENS/PROJETOS/SPACEX.jpg" alt=""></div>
-                <div class="tecs">
-                    <div><abbr title="HTML5"><img src="./IMAGENS/ICONS/html.png" width="35px" alt=""></abbr></div>
-                    <div><abbr title="BOTTSTRAP 5"><img src="./IMAGENS/ICONS/bootstrap.png" width="35px" alt=""></abbr></div>
-                    <div><abbr title="CSS3"><img src="./IMAGENS/ICONS/css.png" width="35px" alt=""></abbr></div>
-                </div>
-                <h3>Clone - SpaceX</h3>
-                <p>Réplica responsiva do site Space X, desenvolvida com Bootstrap 5,
-                garantindo interface consistente e design personalizado,
-                com código limpo e escalável.</p>
-                <div id="links">
-                    <a href="https://spacexclone-marck.vercel.app/" target="_blank"><img src="./IMAGENS/ICONS/olho.png" width="45px" alt=""></a>
-                    <a href="https://github.com/uMarck/spacexclone" target="_blank"><img src="./IMAGENS/ICONS/codigo.png" width="45px" alt=""></a>
-                </div>
+            <div id="card">
+                <a href="">
+                    <h2>Vision Telecom</h2>
+                    <img src="./IMAGENS/PROJE/VISION.png" width="450px" alt="">
+                </a>
             </div>
-            <div id="projeto">
-                <div><img id="img" src="./IMAGENS/PROJETOS/VISION.jpg" alt=""></div>
-                <div class="tecs">
-                    <div><abbr title="HTML5"><img src="./IMAGENS/ICONS/html.png" width="35px" alt=""></abbr></div>
-                    <div><abbr title="SASS"><img src="./IMAGENS/ICONS/sass.png" width="35px" alt=""></abbr></div>
-                    <div><abbr title="CSS3"><img src="./IMAGENS/ICONS/css.png" width="35px" alt=""></abbr></div>
-                </div>
-                <h3>Clone - Vision Telecom</h3>
-                <p>Clone responsivo da Vision Telecom, uma empresa provedor de
-                internet de Manaus, interface responsiva, com tecnologias comum</p>
-                <div id="links">
-                    <a href="https://vision-telecom.vercel.app/" target="_blank"><img src="./IMAGENS/ICONS/olho.png" width="45px" alt=""></a>
-                    <a href="https://github.com/uMarck/vision-telecom" target="_blank"><img src="./IMAGENS/ICONS/codigo.png" width="45px" alt=""></a>
-                </div>
+            <div id="card">
+                <a href="">
+                    <h2>Linktree</h2>
+                    <img src="./IMAGENS/PROJE/LINKTREE.png" width="450px" alt="">
+                </a>
             </div>
-            <div id="projeto">
-                <div><img id="img" src="./IMAGENS/PROJETOS/LINKTREE.jpg" alt=""></div>
-                <div class="tecs">
-                    <div><abbr title="HTML5"><img src="./IMAGENS/ICONS/html.png" width="35px" alt=""></abbr></div>
-                    <div><abbr title="SASS"><img src="./IMAGENS/ICONS/sass.png" width="35px" alt=""></abbr></div>
-                    <div><abbr title="CSS3"><img src="./IMAGENS/ICONS/css.png" width="35px" alt=""></abbr></div>
-                </div>
-                <h3>Clone - LinkTree</h3>
-                <p>Réplica responsiva do site LinkTree, desenvolvida com uso das principais tecnologias,
-                criado especialmente para uso pessoal e para, exposição neste portfólio</p>
-                <div id="links">
-                    <a href="https://linktree-neon.vercel.app/" target="_blank"><img src="./IMAGENS/ICONS/olho.png" width="45px" alt=""></a>
-                    <a href="https://github.com/uMarck/Linktree" target="_blank"><img src="./IMAGENS/ICONS/codigo.png" width="45px" alt=""></a>
-                </div>
+            <div id="card">
+                <a href="">
+                    <h2>Space X Clone</h2>
+                    <img src="./IMAGENS/PROJE/SPACEX.png" width="450px" alt="">
+                </a>
             </div>
-        </div>
-    </div>
-    <!--MINHAS HABILIDADES E CONHECIMENTOS-->
-    <div class="habilidades">
-        <div id="hbd"><h1>Meus conhecimentos</h1></div>
-        <div id="all-hb">
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/html.png" width="100px" alt="">
-                <h2>HTML 5</h2>
-            </div>
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/css.png" width="100px" alt="">
-                <h2>CSS3</h2>
-            </div>
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/sass.png" width="100px" alt="">
-                <h2>SASS</h2>
-            </div>
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/javascript.png" width="100px" alt="">
-                <h2>J.Script</h2>
-            </div>
-        </div>
-        <div id="all-hb">
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/after effects.png" width="100px" alt="">
-                <h2>After</h2>
-            </div>
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/vegas.png" width="100px" alt="">
-                <h2>Vegas</h2>
-            </div>
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/figma.png" width="100px" alt="">
-                <h2>Figma</h2>
-            </div>
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/canva.png" width="100px" alt="">
-                <h2>Canva</h2>
-            </div>
-        </div>
-        <div id="all-hb">
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/bootstrap.png" width="100px" alt="">
-                <h2>BSTRAP</h2>
-            </div>
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/trello.png" width="100px" alt="">
-                <h2>Trello</h2>
-            </div>
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/photoshop.png" width="100px" alt="">
-                <h2>P.Shop</h2>
-            </div>
-            <div id="hb">
-                <img src="./IMAGENS/ICONS/filezilla.png" width="100px" alt="">
-                <h2>File Zilla</h2>
+            <div id="card">
+                <a href="">
+                    <h2>Vision Telecom</h2>
+                    <img src="./IMAGENS/PROJE/VISION.png" width="450px" alt="">
+                </a>
             </div>
         </div>
     </div>
 
+    <!--CONHECIMENTOS-->
+    <div id="conhecimento">
+        <div id="cards">
+            <h1>Minhas habilidades.</h1>
+            <div id="icons">
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/after effects.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/photoshop.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/canva.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/trello.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/figma.png" width="50px" alt="">
+                </div>
+            </div>
+            <div id="icons">
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/javascript.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/css.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/sass.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/bootstrap.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/vegas.png" width="50px" alt="">
+                </div>
+            </div>
+            <div id="icons">
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/disqus.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/filezilla.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/meta.png" width="50px" alt="">
+                </div>
+                <div id="card">
+                    <img src="./IMAGENS/ICONS/obs.png" width="50px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CONTATO-->
     <div id="contato">
-        <h1>Me contate !</h1>
-        <br>
-        <form action="https://formsubmit.co/ryanmarck2@gmail.com" class="form" method="POST">
-            <div id="nome">
-                <label for="text">Seu nome</label>
-                <input type="text" name="name" id="name" placeholder="*" required>
-            </div>
-            <div id="email">
-                <label for="email">Seu e-mail</label>
-                <input type="email" name="email" id="email" placeholder="*" required>
-            </div>
-            <div id="mensagem">
-                <label for="message">Sua mensagem</label>
-                <textarea name="message" id="message" placeholder="*" required></textarea>
-            </div>
-            <input type="hidden" name="_next" value="./obrigado.html">
-            <button type="submit">Enviar</button>
-        </form>
+        <h1>Entre em contato comigo.</h1>
+        <div id="redes">
+            <a href="">
+                <img src="./IMAGENS/linkedin.png" width="50px" alt="">
+            </a>
+            <a href="">
+                <img src="./IMAGENS/gmail.png" width="50px" alt="">
+            </a>
+            <a href="">
+                <img src="./IMAGENS/whatsapp.png" width="50px" alt="">
+            </a>
+        </div>
     </div>
-
-    <footer>
-        <div><h1>Outras formas de contato</h1></div>
-        <div id="redes">
-            <div id="rd"><a target="_blank" href="https://github.com/uMarck"><img src="./IMAGENS/github.png" width="55px" alt=""></a></div>
-            <div id="rd"><a target="_blank" href="https://bit.ly/insta-marck"><img src="./IMAGENS/instagram.png" width="55px" alt=""></a></div>
-            <div id="rd"><a target="_blank" href="https://bit.ly/zap-ryan"><img src="./IMAGENS/whatsapp.png" width="55px" alt=""></a></div>
-        </div>
-        <div id="redes">
-            <div id="rd"><a target="_blank" href="https://twitter.com/eomarckk_"><img src="./IMAGENS/twitter.png" width="55px" alt=""></a></div>
-        <div id="rd"><a target="_blank" href="https://bit.ly/gmail-marck"><img src="./IMAGENS/gmail.png" width="55px" alt=""></a></div>
-        </div>
-        <div id="back">
-            <a href="#top"><h5>Voltar ao topo</h5></a>
-        </div>
-    </footer>
 
     <script src="animation.js"></script>
     <script>
