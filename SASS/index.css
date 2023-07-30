@@ -44,6 +44,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
   }
   .container #sobre {
     line-height: 50px;
@@ -80,7 +83,7 @@ body {
     width: 125px;
   }
   #projetos {
-    height: 100vh;
+    height: auto;
     margin: 1.5rem;
     text-align: center;
     color: white;
@@ -100,48 +103,45 @@ body {
   #projetos #cards #card a img {
     width: 650px;
   }
-  #conhecimento {
-    height: 100vh;
-    text-align: center;
-    color: white;
-    margin: auto;
-  }
-  #conhecimento #icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  #conhecimento #icons #card img {
-    width: 165px;
-    margin: 2.5rem;
-    transition: 0.3s;
-  }
-  #conhecimento #icons #card img:hover {
-    transform: translateY(-10px);
-  }
   #contato {
     margin: auto;
     color: white;
     text-align: center;
     height: 100vh;
+    margin: auto;
+    width: 500px;
     display: grid;
     place-items: center;
   }
   #contato #redes {
-    padding: 0;
-    margin: 0;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
   }
   #contato #redes a {
     text-decoration: none;
+    color: white;
   }
-  #contato #redes a img {
-    margin: 2.5rem;
-    width: 150px;
+  #contato #redes .rede {
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: indigo;
+    margin: 0.5rem 2.5rem;
+    padding: 1rem;
+    border-radius: 15px;
     transition: 0.3s;
   }
-  #contato #redes a img:hover {
+  #contato #redes .rede:hover {
     transform: scale(1.05);
+  }
+  #contato #redes .rede p {
+    padding-right: 2.5rem;
   }
   #mb {
     display: inline;
@@ -290,9 +290,15 @@ body {
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .container #sobre {
     text-align: center;
+    margin: auto;
+    display: grid;
+    place-items: center;
   }
   .container #sobre h2 {
     font-size: 20px;
@@ -308,6 +314,8 @@ body {
   }
   #projetos {
     height: auto;
+    margin: auto;
+    width: 414.5px;
   }
   #projetos #cards {
     display: flex;
@@ -321,40 +329,57 @@ body {
   #projetos #cards #card a img {
     width: 400px;
   }
-  #conhecimento {
-    height: auto;
-  }
-  #conhecimento h1 {
-    padding-top: 2rem;
-  }
-  #conhecimento #cards {
-    margin: auto;
-  }
-  #conhecimento #cards #icons {
-    flex-wrap: wrap;
-    margin: auto;
-  }
-  #conhecimento #cards #icons img {
-    width: 105px;
-    margin: 2rem;
-    padding: 0;
-  }
   #contato {
-    padding-top: 2.5rem;
-    margin-bottom: 2rem;
-    display: grid;
-    place-content: center;
-    place-items: center;
-  }
-  #contato #mb {
-    display: inline;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 413px;
   }
   #contato #redes {
-    width: 300px;
+    width: 413px;
     display: flex;
+    width: 100%;
+    margin: auto;
     flex-wrap: wrap;
+    padding: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #contato #redes a {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #contato p {
+    padding: 0;
+    margin: 0;
   }
   #contato h1 {
     font-size: 20px;
+    margin-top: 5.5rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  #contato {
+    margin: auto;
+    width: 389px;
+    height: 100vh;
+  }
+  #contato #redes {
+    width: 100%;
+    padding: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #contato #redes .rede {
+    margin-top: 1.5rem;
+  }
+  #contato #redes a {
+    width: 100%;
+    margin: 1rem 0.2rem;
+  }
+  #contato h1 {
+    margin: 1.5rem;
   }
 }/*# sourceMappingURL=index.css.map */

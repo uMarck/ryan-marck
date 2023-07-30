@@ -47,15 +47,18 @@ body {
             }
         }
     }
+
     .container {
         height: 85vh;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        user-select: none;
         #sobre {
             line-height: 50px;
             color: white;
+            margin: 1.5rem;
             h2 {
                 font-size: 35px;
             }
@@ -65,7 +68,6 @@ body {
             h3 {
                 font-size: 25px;
             }
-            margin: 1.5rem;
 
             .info {
                 display: flex;
@@ -95,7 +97,7 @@ body {
     }
 
     #projetos {
-        height: 100vh;
+        height: auto;
         margin: 1.5rem;
         text-align: center;
         color: white;
@@ -118,48 +120,43 @@ body {
         }
     }
 
-    #conhecimento {
-        height: 100vh;
-        text-align: center;
-        color: white;
-        margin: auto;
-        #icons {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            #card {
-                img {
-                    width: 165px;
-                    margin: 2.5rem;
-                    transition: 0.3s;
-                    &:hover {
-                        transform: translateY(-10px);
-                    }
-                }
-            }
-        }
-    }
-
     #contato {
         margin: auto;
         color: white;
         text-align: center;
         height: 100vh;
+        margin: auto;
+        width: 500px;
         display: grid;
         place-items: center;
+        
         #redes {
-            padding: 0;
-            margin: 0;
-            height: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            margin: auto;
             a {
                 text-decoration: none;
-                img {
-                    margin: 2.5rem;
-                    width: 150px;
-                    transition: 0.3s;
-                    &:hover {
-                        transform: scale(1.05);
-                    }
+                color: white;
+            }
+            .rede {
+                display: flex;
+                flex-direction: row;
+                height: 65px;
+                align-items: center;
+                justify-content: space-around;
+                background-color: indigo;
+                margin: 0.5rem 2.5rem;
+                padding: 1rem;
+                border-radius: 15px;
+                transition: 0.3s;
+                &:hover {
+                    transform: scale(1.05)
+                }
+                p {
+                    padding-right:2.5rem;
                 }
             }
         }
@@ -341,8 +338,14 @@ body {
     .container {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         #sobre {
             text-align: center;
+            margin: auto;
+            display: grid;
+            place-items: center;
             h2 {
                 font-size: 20px;
             }
@@ -362,6 +365,8 @@ body {
 
     #projetos {
         height: auto;
+        margin: auto;
+        width: 414.5px;
         #cards {
             display: flex;
             flex-direction: column;
@@ -378,41 +383,58 @@ body {
         }
     }
 
-    #conhecimento {
-        h1 {
-            padding-top: 2rem;
-        }
-        height: auto;
-        #cards {
+    #contato {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 413px;
+        #redes {
+            width: 413px;
+            display: flex;
+            width: 100%;
             margin: auto;
-            #icons {
-                flex-wrap: wrap;
-                margin: auto;
-                img {
-                    width: 105px;
-                    margin: 2rem;
-                    padding: 0;
-                }
+            flex-wrap: wrap;
+            padding: 0;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            a {
+                width: 100%;
+                margin: 0;
+                padding: 0;
             }
         }
-    }
-
-    #contato {
-        padding-top: 2.5rem;
-        margin-bottom: 2rem;
-        #mb {
-            display: inline;
-        }
-        #redes {
-            width: 300px;
-            display: flex;
-            flex-wrap: wrap;
+        p {
+            padding: 0;
+            margin: 0;
         }
         h1 {
             font-size: 20px;
+            margin-top: 5.5rem;
         }
-        display: grid;
-        place-content: center;
-        place-items: center;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #contato {
+        margin: auto;
+        width: 389px;
+        height: 100vh;
+        #redes {
+            width: 100%;
+            padding: 0;
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+            .rede {
+                margin-top: 1.5rem;
+            }
+            a {
+                width: 100%;
+                margin: 1rem 0.2rem;
+            }
+        }
+        h1 {
+            margin: 1.5rem;
+        }
     }
 }
