@@ -438,25 +438,38 @@ body {
 }
 
 @media screen and (max-width: 390px) {
-    #contato {
-        margin: auto;
-        width: 389px;
-        height: 100vh;
-        #redes {
-            width: 100%;
-            padding: 0;
-            margin-top: 0.5rem;
-            margin-bottom: 1.5rem;
-            .rede {
-                margin-top: 1.5rem;
-            }
-            a {
-                width: 100%;
-                margin: 1rem 0.2rem;
+    .container {
+        #foto {
+            img {
+                margin-top: 55px;
+                width:300px;
             }
         }
+    }
+
+    #gif {
+        margin-top: 15px;
+    }
+
+    #projetos {
+        width: 355px;
+        #cards {
+            width: 355px;
+            #card {
+                a {
+                    img {
+                        width: 335px;
+                    }
+                }
+            }
+        }
+    }
+
+    #contato {
+        width: 355px;
         h1 {
-            margin: 1.5rem;
+            font-size: 30px;
+            margin-top: -35px;
         }
     }
 }
