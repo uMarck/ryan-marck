@@ -38,6 +38,17 @@ body {
     border: 3px solid rgba(255, 255, 255, 0.158);
     border-radius: 10px;
   }
+  ::-webkit-scrollbar-track {
+    background-color: rgba(197, 30, 30, 0);
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(241, 4, 4, 0);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #440044;
+    border-radius: 0px 0px 0px 50px;
+  }
   .container {
     height: 85vh;
     display: flex;
@@ -260,7 +271,12 @@ body {
     transform: scale(1.02);
   }
   #contato {
-    height: auto;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    justify-content: center;
+    height: 100vh;
+    margin: auto;
     text-align: center;
   }
   #contato h1 {
@@ -270,14 +286,22 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
+  }
+  #contato #redes a {
+    width: 100%;
   }
   #contato #redes a img {
-    margin: 1rem;
+    margin: 0.5rem;
     transition: 0.5s;
   }
   #contato #redes a img:hover {
     transform: scale(1.03);
+  }
+  #ft {
+    padding-top: 1rem;
   }
 }
 @media screen and (max-width: 414px) {
