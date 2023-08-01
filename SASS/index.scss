@@ -47,6 +47,17 @@ body {
             }
         }
     }
+    ::-webkit-scrollbar-track {
+        background-color: #c51e1e00;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+        background: #f1040400;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #440044;
+        border-radius: 0px 0px 0px 50px;
+    }
 
     .container {
         height: 85vh;
@@ -304,7 +315,12 @@ body {
     }
     
     #contato {
-        height: auto;
+        display: grid;
+        place-items: center;
+        place-content: center;
+        justify-content: center;
+        height: 100vh;
+        margin: auto;
         text-align: center;
         h1 {
             color: white;
@@ -313,10 +329,13 @@ body {
             display: flex;
             flex-direction: row;
             align-items: center;
+            flex-wrap: wrap;
             justify-content: center;
+            margin: auto;
             a {
+                width: 100%;
                 img {
-                    margin: 1rem;
+                    margin: 0.5rem;
                     transition: 0.5s;
                     &:hover {
                         transform: scale(1.03);
@@ -324,6 +343,9 @@ body {
                 }
             }
         }
+    }
+    #ft {
+        padding-top: 1rem;
     }
 }
 
