@@ -112,7 +112,10 @@ body {
     color: white;
   }
   #projetos #cards #card a img {
-    width: 650px;
+    width: 750px;
+  }
+  #projetos #cards #card p {
+    margin-bottom: 0.5rem;
   }
   #contato {
     margin: auto;
@@ -153,6 +156,28 @@ body {
   }
   #contato #redes .rede p {
     padding-right: 2.5rem;
+  }
+  #msg form input {
+    border: 1px solid indigo;
+    padding: 2.5rem;
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+    outline: none;
+    background-color: #191919;
+    color: white;
+    font-weight: 700;
+    font-family: "Montserrat", "Poppins", Verdana, Tahoma;
+    border-radius: 20px;
+  }
+  #msg form button {
+    background-color: indigo;
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 0px;
+    width: 100%;
+    cursor: pointer;
+    filter: drop-shadow(0.5px 1px 5px rgba(0, 0, 0, 0.233));
   }
   #mb {
     display: inline;
@@ -304,6 +329,86 @@ body {
     padding-top: 1rem;
   }
 }
+@media screen and (max-width: 834px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .info {
+    justify-content: center;
+    align-items: center;
+  }
+  .container #foto {
+    margin-top: 25px;
+  }
+  .container #foto img {
+    width: 600px;
+  }
+  #gif {
+    margin-top: 25px;
+  }
+  #gif img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .container {
+    flex-direction: column;
+  }
+  .container #sobre h2 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .container #foto {
+    margin-top: 35px;
+  }
+  .container #foto img {
+    width: 500px;
+  }
+  .container .info {
+    justify-content: center;
+    align-items: center;
+  }
+  #gif {
+    margin-top: 55px;
+  }
+  #gif img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container #sobre .info {
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  #gif {
+    margin-top: 55px;
+  }
+  #gif img {
+    width: 150px;
+  }
+  #projetos #cards #card {
+    border-radius: 50px;
+    width: 100%;
+    margin: 1rem;
+    padding-top: 1.5rem;
+  }
+  #contato #msg {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
 @media screen and (max-width: 414px) {
   header {
     padding: 1.5rem;
@@ -312,6 +417,7 @@ body {
     display: none;
   }
   .container {
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,6 +429,7 @@ body {
     margin: auto;
     display: grid;
     place-items: center;
+    margin-bottom: 3.5rem;
   }
   .container #sobre h2 {
     font-size: 20px;
@@ -333,8 +440,19 @@ body {
   .container #sobre h4 {
     font-size: 15px;
   }
+  .container #foto {
+    margin: 0;
+  }
   .container #foto img {
     width: 300px;
+    margin-bottom: 3.5rem;
+  }
+  #gif {
+    margin: 0;
+  }
+  #gif img {
+    width: 100px;
+    margin-top: 20px;
   }
   #projetos {
     height: auto;
@@ -354,11 +472,12 @@ body {
     width: 400px;
   }
   #contato {
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 413px;
+    margin-top: -35px;
   }
   #contato #redes {
     width: 413px;
@@ -383,29 +502,122 @@ body {
     font-size: 20px;
     margin-top: 5.5rem;
   }
+  #contato #msg {
+    margin-top: -105px;
+  }
+  #contato #msg form {
+    width: 400px;
+  }
+  #contato #ft {
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
 @media screen and (max-width: 390px) {
-  .container #foto img {
-    margin-top: 55px;
-    width: 300px;
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    margin-bottom: 0;
+  }
+  .container #sobre {
+    margin-bottom: 1.2rem;
+  }
+  .container #sobre #foto img {
+    width: 290px;
+    margin-bottom: 0;
   }
   #gif {
-    margin-top: 15px;
+    margin-top: 5px;
   }
   #projetos {
     width: 355px;
+    margin: auto;
+  }
+  #projetos h1 {
+    width: 355px;
+    margin: auto;
   }
   #projetos #cards {
     width: 355px;
   }
+  #projetos #cards #card {
+    width: 355px;
+  }
   #projetos #cards #card a img {
-    width: 335px;
+    width: 355px;
+  }
+  #projetos #cards #card p {
+    width: 300px;
+    margin: auto;
+  }
+  #contato {
+    margin: auto;
+    width: 389px;
+    height: auto;
+  }
+  #contato #redes {
+    width: 100%;
+    padding: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #contato #redes .rede {
+    margin-top: 3.5rem;
+  }
+  #contato #redes a {
+    width: 100%;
+    margin: 1rem 0.2rem;
+  }
+  #contato h1 {
+    margin: 1.5rem;
+  }
+  #contato #msg {
+    margin-top: -30px;
+    padding-top: 0;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    width: 399px;
+  }
+  #contato #msg form {
+    width: 350px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  header #menu a {
+    width: 30%;
+    font-size: 15px;
+  }
+  #gif {
+    margin-top: -35px;
+  }
+  #projetos {
+    width: 365px;
+    margin: auto;
+    text-align: center;
+  }
+  #projetos #cards {
+    margin: auto;
+    width: 100%;
+  }
+  #projetos #cards #card {
+    margin: auto;
   }
   #contato {
     width: 355px;
   }
-  #contato h1 {
-    font-size: 30px;
-    margin-top: -35px;
+  #contato #redes a {
+    margin-top: 0.5rem;
+  }
+  #contato #msg {
+    margin: auto;
+    width: 355px;
   }
 }/*# sourceMappingURL=index.css.map */
