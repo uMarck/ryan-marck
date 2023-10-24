@@ -477,6 +477,80 @@ body {
     }
 }
 
+@media screen and (max-width: 428px) {
+    // * {
+    //     border: 0.5px dashed red;
+    // }
+    header {
+        display: none;
+    }
+
+    .container {
+        #sobre {
+            h2 {
+                font-size: 35px;
+                padding-top: 0;
+                margin-top: -45px;
+            }
+        }
+
+        #foto {
+            img {
+                width: 300px;
+            }
+        }
+
+    }
+
+    #gif {
+        img {
+            margin-top: -150px;
+        }
+    }
+
+    #projetos {
+        #cards {
+            padding: 0;
+            margin: 0;
+            #card {
+                padding: 0;
+                margin: 0;
+                a {
+                    img {
+                        width: 355px;
+                    }
+                }
+            }
+        }
+    }
+
+    #contato {
+        width: 100%;
+        h1 {
+            font-size: 30px;
+            width: 90%;
+            text-align: center;
+        }
+        #redes {
+            width: 100%;
+            a {
+                width: 95%;
+            }
+        }
+
+        #msg {
+            width: 70%;
+            h1 {
+                width: 100%
+            }
+            button {
+                font-family: $font;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 414px) {
     header {
         padding: 1.5rem;
